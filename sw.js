@@ -1,12 +1,11 @@
 const CACHE_NAME = "calculadora de gastos";
 const FILES_TO_CACHE = [
-  '/Aplicação PWA/',
-  '/Aplicação PWA/index.html',
-  '/Aplicação PWA/style.css',
-  '/Aplicação PWA/script.js',
-  '/Aplicação PWA/manifest.json',
-  '/Aplicação PWA/imgs/img.png',
-  '/Aplicação PWA/imgs/img2.png'
+  'index.html',
+  'style.css',
+  'script.js',
+  'manifest.json',
+  'Icons/img.png',
+  'Icons/img2.png'
 ];
 
 self.addEventListener("install", (event) => {
