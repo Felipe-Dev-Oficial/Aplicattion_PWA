@@ -5,7 +5,7 @@
     margin-top: 25px;
 }
 
-.btn1{
+#btn1{
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@
 }
 
 
-.btn2{
+#btn2{
     padding: 20px;
     display: flex;
     justify-content: center;

@@ -6,7 +6,10 @@
     <title>Calculadora de Despesas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="button.css">
-    <script src="/Aplicattion_PWA/script.js" defer></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/Icons/playstore.png">
+    <script src="/script.js" defer></script>
+    <script src="/sw.js"></script>
 </head>
 <body>
     <header id="header">
@@ -19,9 +22,27 @@
             <h1 class="h1Main">Calcule Suas Despesas</h1>
             <p class="pMain">Selecione umas das opções abaixo</p>
             <div class="button">
-                <button class="btn1">Registrar Despesas</button>
-                <button class="btn2">Consultar Orçamento</button>
+                <button id="btn1">Registrar Despesas</button>
+                <button id="btn2">Consultar Orçamento</button>
             </div>
+            <form action="script.js" id="form" method="post" style="display: none; margin: 40px;">
+                <fieldset class="nameDespesa">
+                    <label for="">Nome da despesa</label><br>
+                    <input type="text" name="Nome" id="nmDespesa" required>
+                </fieldset>
+                <fieldset>
+                    <label for="">Valor da despesa</label><br>
+                    <input type="text" name="Valor" id="vlrDespesa" required>
+                </fieldset>
+                <button id="enviar">Enviar</button>
+            </form>
+            <form action="script.js" id="form2" method="post" style="display: none; gap:12px">
+                <fieldset>
+                    <label for="">Seu orçamento</label>
+                    <input type="text" name="Orcamento" id="vlrOrcamento">
+                    <button id="enviar">Enviar</button>
+                </fieldset>
+            </form>
         </div>     
     </main>
     <footer id="footer">
