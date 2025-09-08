@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    display: flex;
+    background-color: #625b7132;
+    padding: 20px;
+}
+
+.title{
+    width:100vw;
+    height: 100%;
+    justify-items: center;
+}
+
+.section{
+  display: flex;
+}
+
+.div{
+    /* padding: 0;
+    margin: 0; */
+    background-color: #625b7132;
+    height: 544px;
+    width: 1325px;
+}
